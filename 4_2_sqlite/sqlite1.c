@@ -35,7 +35,7 @@ connection handle with sqlite3_close */
 is the first parameter passed to the callback function and err_msg can be used 
 to see what the error message waws with sqlite3_free(err_msg). */
     
-    if (rc != SQLITE_OK ) {
+    if (return_code != SQLITE_OK ) {
         
         fprintf(stderr, "SQLite error: %s\n", err_msg);
         

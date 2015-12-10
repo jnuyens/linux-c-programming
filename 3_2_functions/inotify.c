@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
@@ -10,7 +9,7 @@
 
 int main( )
 {
-  int length, i = 0;
+  int length, i=0;
   int fd;
   int wd;
   char buffer[EVENT_BUF_LEN];
