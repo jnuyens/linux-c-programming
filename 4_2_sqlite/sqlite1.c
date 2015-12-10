@@ -29,7 +29,7 @@ connection handle with sqlite3_close */
                 "INSERT INTO Students VALUES(3, 'Greg', 666);" 
                 "INSERT INTO Students VALUES(4, 'Andrew', 4242);";
 
-    rc = sqlite3_exec(database, sql_statement, 0, 0, &err_msg);
+    return_code = sqlite3_exec(database, sql_statement, 0, 0, &err_msg);
 /*we provide the obtained database handle, the sql statement string, the third 
 * parameter is a callback function invoked for each result row, the 4th parameter 
 is the first parameter passed to the callback function and err_msg can be used 
