@@ -4,7 +4,7 @@
 int is_a_prime_or_not( int checkprime1, int checkprime2)
 {
 	int prime_roulette=0;
-	getrandom(prime_roulette);
+	getrandom(&prime_roulette,sizeof(prime_roulette),GRND_NONBLOCK);
 
 	if (prime_roulette > 100){
 	 	printf("%d, it’s a prime \n", prime_roulette); 
